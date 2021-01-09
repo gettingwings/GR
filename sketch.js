@@ -134,9 +134,9 @@ function spawnDoors() {
     ghost.depth =door.depth + 1;
    
     //assign lifetime to the variable
-    door.lifetime = height/speed;
-    climber.lifetime = height/speed;
-    block.lifetime = height/speed;
+    door.lifetime = height/speed + 20;
+    climber.lifetime = height/speed + 20;
+    block.lifetime = height/speed + 20;
     
     //door.debug = true;
     //climber.debug = true;
