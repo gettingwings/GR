@@ -58,7 +58,7 @@ function draw(){
         invisibleGround.scale = 0.001;
       }
     
-      if(tower.y > height-100){
+      if(tower.y > height-150){
          tower.y = height/2;
       }
       
@@ -111,7 +111,8 @@ function draw(){
 function spawnDoors() {
   
   if (frameCount % 100 === 0) {
-    var rand = Math.round(random(120,width-120));
+    var rand = 
+        Math.round(random(width/2-200, width/2+200));
     
     var door = createSprite(rand, -50);
     var climber = createSprite(rand, door.y+door.height/2);
